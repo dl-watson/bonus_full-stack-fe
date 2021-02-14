@@ -1,11 +1,6 @@
 /* eslint-disable max-len */
 import React from "react";
-import {
-  getDefaultNormalizer,
-  render,
-  screen,
-  waitFor,
-} from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
 
