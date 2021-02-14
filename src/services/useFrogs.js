@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import postFrogs from "../utils/postFrogs";
 
 const useFrogs = () => {
@@ -17,9 +17,11 @@ const useFrogs = () => {
     setDescription(fdescription.value);
   };
 
-  if ((name, image, description)) {
-    postFrogs(name, image, description).then((res) => setResponse(res));
-  }
+  useEffect(() => {
+    if ((name, image, description)) {
+      postFrogs(name, image, description).then((res) => setResponse(res));
+    }
+  }, [name, image, description]);
 
   return { name, image, description, response, handleSubmit };
 };
