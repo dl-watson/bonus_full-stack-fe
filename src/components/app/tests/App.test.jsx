@@ -1,6 +1,11 @@
 /* eslint-disable max-len */
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import {
+  getDefaultNormalizer,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
 
@@ -28,10 +33,10 @@ describe("App component", () => {
     const submitButton = screen.getByText("Submit");
     userEvent.click(submitButton);
 
-    const jsonView = screen.getByTestId("response-view");
-
     return waitFor(() => {
-      expect(jsonView).not.toBeEmptyDomElement;
+      expect(screen.getByText("name"));
+      expect(screen.getByText("image"));
+      expect(screen.getByText("description"));
     });
   });
 });
