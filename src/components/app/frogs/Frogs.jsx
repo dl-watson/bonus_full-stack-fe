@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Frogs = () => {};
+const Frogs = () => {
+  return <>Frogs</>;
+};
 
 Frogs.propTypes = {};
 
