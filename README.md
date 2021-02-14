@@ -2,6 +2,8 @@
 
 Goal: create a full-stack CRUD app.
 
+Deployed link: https://ecstatic-franklin-fe3f2d.netlify.app/
+
 ### Process
 
 Make vertical slices to create a CRUD app:
