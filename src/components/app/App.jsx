@@ -1,19 +1,21 @@
 import React from "react";
 import Frogs from "./frogs/Frogs";
 import useFrogs from "../../services/useFrogs";
+import Response from "../response/Response";
 
 const App = () => {
-  const { name, image, description, handleSubmit } = useFrogs();
+  const { name, image, description, response, handleSubmit } = useFrogs();
 
   return (
-    <div>
+    <>
       <Frogs
         name={name}
         image={image}
         description={description}
         handleSubmit={handleSubmit}
       />
-    </div>
+      <Response response={response} />
+    </>
   );
 };
 
