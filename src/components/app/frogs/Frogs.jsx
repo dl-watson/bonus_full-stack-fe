@@ -1,12 +1,35 @@
+/* eslint-disable max-len */
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./styles/Frogs.css";
 
 const Frogs = ({ name, image, description, handleSubmit }) => {
   return (
-    <form onSubmit={handleSubmit}>
-      <input defaultValue={name} name="fname" />
-      <input defaultValue={image} name="fimage" />
-      <input defaultValue={description} name="fdescription" />
+    <form className={styles.Frogs} onSubmit={handleSubmit}>
+      <label htmlFor="fname">
+        Name:
+        <input
+          defaultValue={name}
+          name="fname"
+          placeholder="Desert rain frog"
+        />
+      </label>
+      <label htmlFor="fimage">
+        Image:
+        <input
+          defaultValue={image}
+          name="fimage"
+          placeholder="https://bit.ly/3jSq7r9"
+        />
+      </label>
+      <label htmlFor="fdescription">
+        Description:
+        <input
+          defaultValue={description}
+          name="fdescription"
+          placeholder="A species of frog in the family Brevicipitidae."
+        />
+      </label>
       <button>Submit</button>
     </form>
   );

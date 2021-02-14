@@ -1,7 +1,7 @@
 import React from "react";
 import Frogs from "./frogs/Frogs";
-import useFrogs from "../../services/useFrogs";
 import Response from "../response/Response";
+import useFrogs from "../../services/useFrogs";
 
 const App = () => {
   const { name, image, description, response, handleSubmit } = useFrogs();
