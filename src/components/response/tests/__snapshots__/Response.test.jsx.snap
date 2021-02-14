@@ -1,45 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`Response component renders Response 1`] = `
 <DocumentFragment>
-  <form
-    class="Frogs"
-  >
-    <label
-      for="fname"
-    >
-      Name:
-      <input
-        name="fname"
-        placeholder="Desert rain frog"
-        value=""
-      />
-    </label>
-    <label
-      for="fimage"
-    >
-      Image:
-      <input
-        name="fimage"
-        placeholder="https://bit.ly/3jSq7r9"
-        value=""
-      />
-    </label>
-    <label
-      for="fdescription"
-    >
-      Description:
-      <input
-        name="fdescription"
-        placeholder="A species of frog in the family Brevicipitidae."
-        value=""
-      />
-    </label>
-    <button>
-      Submit
-    </button>
-  </form>
-  <br />
   <div
     class="react-json-view"
     style="font-family: monospace; cursor: default; background-color: rgba(0, 0, 0, 0); position: relative;"

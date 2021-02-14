@@ -5,7 +5,7 @@ import Response from "../Response";
 describe("Response component", () => {
   afterEach(() => cleanup());
   it("renders Response", () => {
-    const { asFragment } = render(<Response />);
+    const { asFragment } = render(<Response response={{}} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
