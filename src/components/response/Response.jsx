@@ -4,9 +4,9 @@ import ReactJson from "react-json-view";
 
 const Response = ({ response }) => {
   return (
-    <>
+    <div data-testid="response-view">
       <ReactJson crossorigin src={response} />
-    </>
+    </div>
   );
 };
 

@@ -11,6 +11,7 @@ const Frogs = ({ name, image, description, handleSubmit }) => {
         <input
           defaultValue={name}
           name="fname"
+          id="fname"
           placeholder="Desert rain frog"
         />
       </label>
@@ -19,6 +20,7 @@ const Frogs = ({ name, image, description, handleSubmit }) => {
         <input
           defaultValue={image}
           name="fimage"
+          id="fimage"
           placeholder="https://bit.ly/3jSq7r9"
         />
       </label>
@@ -27,6 +29,7 @@ const Frogs = ({ name, image, description, handleSubmit }) => {
         <input
           defaultValue={description}
           name="fdescription"
+          id="fdescription"
           placeholder="A species of frog in the family Brevicipitidae."
         />
       </label>

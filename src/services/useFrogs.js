@@ -8,13 +8,13 @@ const useFrogs = () => {
   const [response, setResponse] = useState({});
 
   const handleSubmit = (e) => {
-    const { fname, fimage, fdescription } = e.target;
+    const { elements } = e.target;
 
     e.preventDefault();
 
-    setName(fname.value);
-    setImage(fimage.value);
-    setDescription(fdescription.value);
+    setName(elements.fname.value);
+    setImage(elements.fimage.value);
+    setDescription(elements.fdescription.value);
   };
 
   useEffect(() => {

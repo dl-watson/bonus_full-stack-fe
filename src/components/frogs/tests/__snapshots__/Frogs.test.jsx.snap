@@ -10,6 +10,7 @@ exports[`Frogs component renders Frogs 1`] = `
     >
       Name:
       <input
+        id="fname"
         name="fname"
         placeholder="Desert rain frog"
         value=""
@@ -20,6 +21,7 @@ exports[`Frogs component renders Frogs 1`] = `
     >
       Image:
       <input
+        id="fimage"
         name="fimage"
         placeholder="https://bit.ly/3jSq7r9"
         value=""
@@ -30,6 +32,7 @@ exports[`Frogs component renders Frogs 1`] = `
     >
       Description:
       <input
+        id="fdescription"
         name="fdescription"
         placeholder="A species of frog in the family Brevicipitidae."
         value=""
