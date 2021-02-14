@@ -1,5 +1,5 @@
 import React from "react";
-import Frogs from "./frogs/Frogs";
+import Frogs from "../frogs/Frogs";
 import Response from "../response/Response";
 import useFrogs from "../../services/useFrogs";
 
