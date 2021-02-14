@@ -11,3 +11,5 @@ const useFrogs = () => {
 
   return { name, image, description, handleSubmit };
 };
+
+export default useFrogs;
